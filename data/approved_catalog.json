@@ -33,10 +33,34 @@
     "url": "https://www.amazon.com/dp/B00775OA34?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B00775OA34?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "",
+    "image_url": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-card.jpg",
     "commission": "4%",
-    "date": "2026-08-10T00:57:28.799219",
-    "on_site": true
+    "date": "2026-08-13T11:11:05.636607",
+    "on_site": true,
+    "posted": true,
+    "variations_ready": true,
+    "posted_date": "2026-08-13T11:11:05.636607",
+    "assets": {
+      "card": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-card.jpg",
+      "ig_imgs": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/ig_img_1.jpg",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/ig_img_2.jpg",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/ig_img_3.jpg"
+      ],
+      "tt_imgs": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_img_1.jpg",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_img_2.jpg",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_img_3.jpg"
+      ],
+      "ig_vids": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/ig_vid_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/ig_vid_2.mp4"
+      ],
+      "tt_vids": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_2.mp4"
+      ]
+    }
   },
   {
     "title": "Pleaser Adore-1061 — Black Suede Slouch 7\" Stiletto Boot",
