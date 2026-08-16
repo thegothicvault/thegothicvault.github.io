@@ -188,9 +188,20 @@
     "url": "https://www.killstar.com/products/gloomed-and-doomed-boots",
     "aff_link": "https://www.killstar.com/products/gloomed-and-doomed-boots",
     "domain": "www.killstar.com",
-    "image_url": "https://cdn.shopify.com/s/files/1/0228/2373/files/DOOMED-AND-GLOOMED-BOOTS-A_dd8fe539-91c4-42d2-a510-161cee58a08e.jpg?v=1780404026",
+    "image_url": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/ig_1x1_01.jpg",
     "commission": "10%",
     "date": "2026-08-16T09:19:40.353893",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "ig_1x1_01": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/ig_1x1_01.jpg",
+      "ig_1x1_02": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/ig_1x1_02.jpg",
+      "ig_video_01": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/ig_video_01.mp4",
+      "ig_video_02": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/ig_video_02.mp4",
+      "tiktok_9x16_01": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/tiktok_9x16_01.jpg",
+      "tiktok_9x16_02": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/tiktok_9x16_02.jpg",
+      "tiktok_video_01": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/tiktok_video_01.mp4",
+      "tiktok_video_02": "https://thestilettovault.github.io/img/heels/killstar-gloomed-and-doomed/tiktok_video_02.mp4"
+    },
+    "variations_ready": true
   }
 ]
