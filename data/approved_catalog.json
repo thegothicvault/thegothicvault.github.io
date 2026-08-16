@@ -163,10 +163,23 @@
     "url": "https://www.killstar.com/products/bloodletting-knee-high-boots-b",
     "aff_link": "https://www.killstar.com/products/bloodletting-knee-high-boots-b",
     "domain": "www.killstar.com",
-    "image_url": "https://cdn.shopify.com/s/files/1/0228/2373/files/BLOOD-LETTING-KNEE-HIGH-BOOTS-D.jpg?v=1777304786",
+    "image_url": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_1x1_01.jpg",
     "commission": "10%",
     "date": "2026-08-16T09:19:36.860227",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "ig_1x1_01": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_1x1_01.jpg",
+      "ig_1x1_02": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_1x1_02.jpg",
+      "ig_1x1_03": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_1x1_03.jpg",
+      "ig_video_01": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_video_01.mp4",
+      "ig_video_02": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_video_02.mp4",
+      "ig_video_03": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/ig_video_03.mp4",
+      "tiktok_9x16_01": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/tiktok_9x16_01.jpg",
+      "tiktok_9x16_02": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/tiktok_9x16_02.jpg",
+      "tiktok_video_01": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/tiktok_video_01.mp4",
+      "tiktok_video_02": "https://thestilettovault.github.io/img/heels/killstar-bloodletting-knee-high/tiktok_video_02.mp4"
+    },
+    "variations_ready": true
   },
   {
     "title": "Gloomed and Doomed Boots",
