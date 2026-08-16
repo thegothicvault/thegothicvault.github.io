@@ -121,10 +121,19 @@
     "url": "https://gthic.com/products/stylish-glossy-pointed-toe-stiletto-heel-knight-high-boots",
     "aff_link": "https://gthic.com/products/stylish-glossy-pointed-toe-stiletto-heel-knight-high-boots?aff=826",
     "domain": "gthic.com",
-    "image_url": "https://cdn.shopify.com/s/files/1/0262/1423/6212/files/stylish_glossy_pointed-toe_stiletto_heel_knight_high_boots_gthic_3.jpg?v=1761903411",
+    "image_url": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_01.jpg",
     "commission": "15%",
     "date": "2026-08-16T09:19:28.346907",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "ig_1x1_01": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_01.jpg",
+      "ig_1x1_02": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_02.jpg",
+      "tiktok_9x16_01": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_9x16_01.jpg",
+      "tiktok_9x16_02": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_9x16_02.jpg",
+      "ig_video_16x9": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_video_16x9.mp4",
+      "tiktok_video_9x16": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_video_9x16.mp4"
+    },
+    "variations_ready": true
   },
   {
     "title": "Stylish Pointed-Toe Studded Stacking Stiletto High Boots",
