@@ -271,19 +271,39 @@
       ]
     },
     "variations_ready": true,
-    "on_site": true
+    "on_site": true,
+    "posted": true,
+    "posted_date": "2026-08-26T10:52:28.507992"
   },
   {
     "title": "DREAM PAIRS — 4\" Classic Pointed-Toe Stiletto Pump",
     "url": "https://www.amazon.com/dp/B08F7G1ZCW?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B08F7G1ZCW?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "",
+    "image_url": "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/ig_image_1.png",
     "commission": "4%",
     "date": "2026-08-18T09:03:59.610908",
     "local_asset": "GELEM/2026-08-18/b08f7g1zcw/source.jpg",
     "downloaded": "2026-08-18",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/tt_video_1.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/ig_image_2.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/tt_image_1.png",
+        "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/tt_image_2.png"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/dream-pairs-4-classic-pointed-toe-stiletto-pump/ig_image_1.png"
+    },
+    "variations_ready": true
   },
   {
     "title": "Foklysp — Studded Spike Pointed-Toe Stiletto Pumps",
