@@ -38,7 +38,7 @@
     "url": "https://www.amazon.com/dp/B00775OA34?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B00775OA34?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-card.jpg",
+    "image_url": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_image_1.png",
     "commission": "4%",
     "date": "2026-08-13T11:11:05.636607",
     "on_site": true,
@@ -64,7 +64,24 @@
       "tt_vids": [
         "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_1.mp4",
         "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_2.mp4"
-      ]
+      ],
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_video_2.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/tt_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/tt_video_2.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_image_2.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/tt_image_1.png",
+        "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/tt_image_2.png"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-7-stiletto-lace-up-platform-boot-black/ig_image_1.png"
     },
     "local_asset": "GELEM/2026-08-25/pleaser-adore-1020-stiletto-lace-up-platform",
     "downloaded": "2026-08-25",
@@ -104,7 +121,7 @@
     "date": "2026-08-10T00:57:51.605597",
     "on_site": true,
     "posted": true,
-    "posted_date": "2026-08-11T14:19:56.005247",
+    "posted_date": "2026-08-26T11:02:07.115997",
     "local_asset": "GELEM/2026-08-24/lishan-gladiator-stiletto-knee-high",
     "downloaded": "2026-08-24",
     "image_ok": true,
