@@ -16,7 +16,9 @@
     "variations_ready": true,
     "on_site": true,
     "posted": true,
-    "posted_date": "2026-08-12T09:27:15.503008"
+    "posted_date": "2026-08-12T09:27:15.503008",
+    "local_asset": "GELEM/2026-08-10/b0f7lsl3g1/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "Pleaser Seduce-1020 — Black Patent Platform Ankle Boot",
@@ -26,7 +28,10 @@
     "image_url": "",
     "commission": "4%",
     "date": "2026-08-10T00:57:18.809833",
-    "on_site": true
+    "on_site": true,
+    "local_asset": "GELEM/2026-08-25/pleaser-seduce-1020-black-patent-platform-stiletto",
+    "downloaded": "2026-08-25",
+    "image_ok": true
   },
   {
     "title": "Pleaser Adore-1020 — 7\" Stiletto Lace-Up Platform Boot, Black",
@@ -60,7 +65,10 @@
         "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_1.mp4",
         "https://thestilettovault.github.io/img/heels/pleaser-adore-1020/tt_vid_2.mp4"
       ]
-    }
+    },
+    "local_asset": "GELEM/2026-08-25/pleaser-adore-1020-stiletto-lace-up-platform",
+    "downloaded": "2026-08-25",
+    "image_ok": true
   },
   {
     "title": "Pleaser Adore-1061 — Black Suede Slouch 7\" Stiletto Boot",
@@ -70,7 +78,9 @@
     "image_url": "",
     "commission": "4%",
     "date": "2026-08-10T00:57:37.741434",
-    "on_site": true
+    "on_site": true,
+    "local_asset": "GELEM/2026-08-10/b0dpllm13g/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "Ojiaoer — Studded Spike Pointed Toe Stiletto Pumps",
@@ -80,7 +90,9 @@
     "image_url": "",
     "commission": "4%",
     "date": "2026-08-10T00:57:45.803959",
-    "on_site": true
+    "on_site": true,
+    "local_asset": "GELEM/2026-08-10/b0g3pgsc6p/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "LISHAN — Lace-Up Gladiator Stiletto, Knee-High Black",
@@ -92,7 +104,10 @@
     "date": "2026-08-10T00:57:51.605597",
     "on_site": true,
     "posted": true,
-    "posted_date": "2026-08-11T14:19:56.005247"
+    "posted_date": "2026-08-11T14:19:56.005247",
+    "local_asset": "GELEM/2026-08-24/lishan-gladiator-stiletto-knee-high",
+    "downloaded": "2026-08-24",
+    "image_ok": true
   },
   {
     "title": "Tracieshoes — Thigh-High Gladiator 4.3\" Stiletto Lace-Up",
@@ -104,7 +119,9 @@
     "date": "2026-08-10T00:58:02.950397",
     "on_site": true,
     "posted": true,
-    "posted_date": "2026-08-09T22:00:00"
+    "posted_date": "2026-08-09T22:00:00",
+    "local_asset": "GELEM/2026-08-10/b0gxv38cd7/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "Soireelady — Platform Stiletto T-Strap Sandal, Punk",
@@ -114,49 +131,9 @@
     "image_url": "",
     "commission": "4%",
     "date": "2026-08-11T10:32:44.441149",
-    "on_site": true
-  },
-  {
-    "title": "Stylish Glossy Pointed-Toe Stiletto Heel Knight High Boots",
-    "url": "https://gthic.com/products/stylish-glossy-pointed-toe-stiletto-heel-knight-high-boots",
-    "aff_link": "https://gthic.com/products/stylish-glossy-pointed-toe-stiletto-heel-knight-high-boots?aff=826",
-    "domain": "gthic.com",
-    "image_url": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_01.jpg",
-    "commission": "15%",
-    "date": "2026-08-16T09:19:28.346907",
     "on_site": true,
-    "assets": {
-      "ig_1x1_01": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_01.jpg",
-      "ig_1x1_02": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_1x1_02.jpg",
-      "tiktok_9x16_01": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_9x16_01.jpg",
-      "tiktok_9x16_02": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_9x16_02.jpg",
-      "ig_video_16x9": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/ig_video_16x9.mp4",
-      "tiktok_video_9x16": "https://thestilettovault.github.io/img/heels/gthic-knight-high-stiletto/tiktok_video_9x16.mp4"
-    },
-    "variations_ready": true,
-    "posted": true,
-    "posted_date": "2026-08-16T10:28:14.047088"
-  },
-  {
-    "title": "Stylish Pointed-Toe Studded Stacking Stiletto High Boots",
-    "url": "https://gthic.com/products/stylish-pointed-toe-studded-stacking-stiletto-high-boots",
-    "aff_link": "https://gthic.com/products/stylish-pointed-toe-studded-stacking-stiletto-high-boots?aff=826",
-    "domain": "gthic.com",
-    "image_url": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/ig_1x1_01.jpg",
-    "commission": "15%",
-    "date": "2026-08-16T09:19:34.311994",
-    "assets": {
-      "ig_1x1_01": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/ig_1x1_01.jpg",
-      "ig_1x1_02": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/ig_1x1_02.jpg",
-      "tiktok_9x16_01": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/tiktok_9x16_01.jpg",
-      "tiktok_9x16_02": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/tiktok_9x16_02.jpg",
-      "ig_video_16x9": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/ig_video_16x9.mp4",
-      "tiktok_video_9x16": "https://thestilettovault.github.io/img/heels/gthic-studded-stacking-stiletto/tiktok_video_9x16.mp4"
-    },
-    "variations_ready": true,
-    "on_site": true,
-    "posted": true,
-    "posted_date": "2026-08-16T10:01:03.077619"
+    "local_asset": "GELEM/2026-08-11/b0dsj68lmn/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "Bloodletting Knee-High Boots",
@@ -181,7 +158,9 @@
     },
     "variations_ready": true,
     "posted": true,
-    "posted_date": "2026-08-16T11:50:19.623124"
+    "posted_date": "2026-08-16T11:50:19.623124",
+    "local_asset": "GELEM/2026-08-16/bloodletting-knee-high-boots-b/source.jpg",
+    "downloaded": "2026-08-18"
   },
   {
     "title": "Gloomed and Doomed Boots",
@@ -204,6 +183,214 @@
     },
     "variations_ready": true,
     "posted": true,
-    "posted_date": "2026-08-16T12:26:02.626410"
+    "posted_date": "2026-08-16T12:26:02.626410",
+    "local_asset": "GELEM/2026-08-16/gloomed-and-doomed-boots/source.jpg",
+    "downloaded": "2026-08-18"
+  },
+  {
+    "title": "SHOW STORY — Punk X-Strap Gothic Platform Stiletto Pump Sandals",
+    "url": "https://www.amazon.com/dp/B01GA4U2QQ?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B01GA4U2QQ?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "",
+    "commission": "4%",
+    "date": "2026-08-17T17:39:12.662310",
+    "local_asset": "GELEM/2026-08-17/show-story-punk-platform-stiletto/source.jpg",
+    "downloaded": "2026-08-17",
+    "on_site": true
+  },
+  {
+    "title": "DEMOSHINE — Black Patent Pointed-Toe Stiletto Pumps",
+    "url": "https://www.amazon.com/dp/B0DDPVY6KZ?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B0DDPVY6KZ?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/ig_image_1.png",
+    "commission": "4%",
+    "date": "2026-08-17T17:39:24.495419",
+    "local_asset": "GELEM/2026-08-24/demoshine-black-patent-stiletto-pump",
+    "downloaded": "2026-08-24",
+    "image_ok": true,
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/tt_video_1.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/ig_image_1.png"
+      ],
+      "images_tt": [],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/ig_image_1.png"
+    },
+    "variations_ready": true
+  },
+  {
+    "title": "MUCCCUTE — Red Metallic Chrome Stiletto Thigh-High Boots",
+    "url": "https://www.amazon.com/dp/B0CB2F7W3W?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B0CB2F7W3W?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "",
+    "commission": "4%",
+    "date": "2026-08-17T17:40:23.892591",
+    "local_asset": "GELEM/2026-08-17/mucccute-red-metallic-stiletto-thigh-high/source.jpg",
+    "downloaded": "2026-08-17",
+    "on_site": true
+  },
+  {
+    "title": "VOGEL VERE — Glitter Sparkly Pointed-Toe Stiletto Pump",
+    "url": "https://www.amazon.com/dp/B0H29ZB7SK?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B0H29ZB7SK?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_1.png",
+    "commission": "4%",
+    "date": "2026-08-17T17:40:25.671064",
+    "local_asset": "GELEM/2026-08-17/vogel-vere-glitter-stiletto-pump/source.jpg",
+    "downloaded": "2026-08-17",
+    "assets": {
+      "image_1x1": "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_1.png",
+      "image_9x16": "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/tiktok_9x16.png",
+      "video": "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/video_9x16.mp4",
+      "image_4x5": "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/insta_4x5.png",
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/tt_video_1.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_2.png",
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_3.png",
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/ig_image_4.jpg"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/tt_image_1.png",
+        "https://thestilettovault.github.io/img/heels/vogel-vere-glitter-sparkly-pointed-toe-stiletto-pump/tt_image_2.jpg"
+      ]
+    },
+    "variations_ready": true,
+    "on_site": true
+  },
+  {
+    "title": "DREAM PAIRS — 4\" Classic Pointed-Toe Stiletto Pump",
+    "url": "https://www.amazon.com/dp/B08F7G1ZCW?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B08F7G1ZCW?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "",
+    "commission": "4%",
+    "date": "2026-08-18T09:03:59.610908",
+    "local_asset": "GELEM/2026-08-18/b08f7g1zcw/source.jpg",
+    "downloaded": "2026-08-18",
+    "on_site": true
+  },
+  {
+    "title": "Foklysp — Studded Spike Pointed-Toe Stiletto Pumps",
+    "url": "https://www.amazon.com/dp/B0FT2YGHWR?tag=thegothicvaul-20",
+    "aff_link": "https://www.amazon.com/dp/B0FT2YGHWR?tag=thegothicvaul-20",
+    "domain": "amazon.com",
+    "image_url": "",
+    "commission": "4%",
+    "date": "2026-08-23T08:01:58.909441",
+    "on_site": true
+  },
+  {
+    "title": "Elegant Black Satin Pointed-Toe Stiletto Pumps — Gold Hoop",
+    "url": "https://www.aliexpress.com/item/3256810321515014.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256810321515014.html",
+    "domain": "aliexpress.com",
+    "image_url": "",
+    "commission": "6.9%",
+    "date": "2026-08-23T21:30:19.232594",
+    "local_asset": "GELEM/2026-08-23/elegant-black-satin-pointed-toe-stiletto-pumps-gold-hoop",
+    "image_ok": true,
+    "downloaded": "2026-08-23",
+    "on_site": true
+  },
+  {
+    "title": "Hallie Black Butterfly Embellishment Ankle-Tie High Heels",
+    "url": "https://www.publicdesire.com/products/hallie-black-butterfly-embelishment-ankle-tie-high-heels",
+    "aff_link": "https://www.publicdesire.com/products/hallie-black-butterfly-embelishment-ankle-tie-high-heels",
+    "domain": "www.publicdesire.com",
+    "image_url": "https://www.publicdesire.com/cdn/shop/files/hallie-black-butterfly-embelishment-ankle-tie-high-heels.jpg",
+    "commission": "8%",
+    "date": "2026-08-23T21:30:24.141667",
+    "local_asset": "GELEM/2026-08-23/hallie-black-butterfly-embellishment-ankle-tie-high-heels",
+    "image_ok": true,
+    "downloaded": "2026-08-23",
+    "on_site": true
+  },
+  {
+    "title": "Black Red-Soled 10cm Pointed-Toe Stiletto Pumps",
+    "url": "https://www.aliexpress.com/item/3256810250961501.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256810250961501.html",
+    "domain": "aliexpress.com",
+    "image_url": "",
+    "commission": "6.9%",
+    "date": "2026-08-24T08:30:14.019991",
+    "local_asset": "GELEM/2026-08-24/black-red-soled-10cm-pointed-toe-stiletto-pumps",
+    "image_ok": true,
+    "downloaded": "2026-08-24",
+    "on_site": true
+  },
+  {
+    "title": "cbb1ca",
+    "url": "cbb1ca",
+    "aff_link": "cbb1ca",
+    "domain": "",
+    "image_url": "",
+    "commission": "",
+    "date": "2026-08-24T08:30:14.292610",
+    "local_asset": "GELEM/2026-08-24/cbb1ca",
+    "image_ok": true,
+    "downloaded": "2026-08-24",
+    "on_site": true
+  },
+  {
+    "title": "11cm Slingback Pointed-Toe Stiletto Party Heels",
+    "url": "https://www.aliexpress.com/item/3256808390900535.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256808390900535.html",
+    "domain": "aliexpress.com",
+    "image_url": "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_image_1.jpg",
+    "commission": "6.9%",
+    "date": "2026-08-24T08:31:50.490141",
+    "local_asset": "GELEM/2026-08-24/11cm-slingback-pointed-toe-stiletto-party-heels",
+    "image_ok": true,
+    "downloaded": "2026-08-24",
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_video_2.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/tt_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/tt_video_2.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_image_1.jpg",
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_image_2.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/tt_image_1.jpg",
+        "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/tt_image_2.jpg"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_image_1.jpg"
+    },
+    "variations_ready": true
+  },
+  {
+    "title": "11cm Slingback Pointed-Toe Patent Stiletto Pumps",
+    "url": "https://www.aliexpress.com/item/3256802275688808.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256802275688808.html",
+    "domain": "aliexpress.com",
+    "image_url": "",
+    "commission": "6.9%",
+    "date": "2026-08-24T08:33:18.664614",
+    "local_asset": "GELEM/2026-08-24/11cm-slingback-pointed-toe-patent-stiletto-pumps",
+    "image_ok": true,
+    "downloaded": "2026-08-25",
+    "on_site": true
   }
 ]
