@@ -99,7 +99,7 @@
     "url": "https://www.amazon.com/dp/B088DYDY5T?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B088DYDY5T?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "https://thestilettovault.github.io/img/heels/lishan-gladiator.jpg",
+    "image_url": "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_image_1.png",
     "commission": "4%",
     "date": "2026-08-10T00:57:51.605597",
     "on_site": true,
@@ -107,7 +107,25 @@
     "posted_date": "2026-08-11T14:19:56.005247",
     "local_asset": "GELEM/2026-08-24/lishan-gladiator-stiletto-knee-high",
     "downloaded": "2026-08-24",
-    "image_ok": true
+    "image_ok": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/tt_video_1.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_image_2.png",
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_image_3.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/tt_image_1.png"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/lishan-lace-up-gladiator-stiletto-knee-high-black/ig_image_1.png"
+    },
+    "variations_ready": true
   },
   {
     "title": "Tracieshoes — Thigh-High Gladiator 4.3\" Stiletto Lace-Up",
@@ -224,7 +242,9 @@
       "images_tt": [],
       "image_1x1": "https://thestilettovault.github.io/img/heels/demoshine-black-patent-pointed-toe-stiletto-pumps/ig_image_1.png"
     },
-    "variations_ready": true
+    "variations_ready": true,
+    "posted": true,
+    "posted_date": "2026-08-26T11:00:56.097231"
   },
   {
     "title": "MUCCCUTE — Red Metallic Chrome Stiletto Thigh-High Boots",
