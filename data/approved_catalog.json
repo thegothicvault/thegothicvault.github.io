@@ -348,13 +348,33 @@
     "url": "https://www.aliexpress.com/item/3256810250961501.html",
     "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256810250961501.html",
     "domain": "aliexpress.com",
-    "image_url": "",
+    "image_url": "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_image_1.png",
     "commission": "6.9%",
     "date": "2026-08-24T08:30:14.019991",
     "local_asset": "GELEM/2026-08-24/black-red-soled-10cm-pointed-toe-stiletto-pumps",
     "image_ok": true,
     "downloaded": "2026-08-24",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_video_2.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/tt_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/tt_video_2.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_image_2.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/tt_image_1.png",
+        "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/tt_image_2.png"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/black-red-soled-10cm-pointed-toe-stiletto-pumps/ig_image_1.png"
+    },
+    "variations_ready": true
   },
   {
     "title": "cbb1ca",
@@ -400,7 +420,9 @@
       ],
       "image_1x1": "https://thestilettovault.github.io/img/heels/11cm-slingback-pointed-toe-stiletto-party-heels/ig_image_1.jpg"
     },
-    "variations_ready": true
+    "variations_ready": true,
+    "posted": true,
+    "posted_date": "2026-08-26T10:58:34.278810"
   },
   {
     "title": "11cm Slingback Pointed-Toe Patent Stiletto Pumps",
