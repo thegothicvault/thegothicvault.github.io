@@ -290,12 +290,31 @@
     "url": "https://www.amazon.com/dp/B0CB2F7W3W?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B0CB2F7W3W?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "",
+    "image_url": "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/ig_image_1.jpg",
     "commission": "4%",
     "date": "2026-08-17T17:40:23.892591",
     "local_asset": "GELEM/2026-08-17/mucccute-red-metallic-stiletto-thigh-high/source.jpg",
     "downloaded": "2026-08-17",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/tt_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/tt_video_2.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/ig_image_1.jpg",
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/ig_image_2.jpg"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/tt_image_1.jpg",
+        "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/tt_image_2.jpg"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/mucccute-red-metallic-chrome-stiletto-thigh-high-boots/ig_image_1.jpg"
+    },
+    "variations_ready": true
   },
   {
     "title": "VOGEL VERE — Glitter Sparkly Pointed-Toe Stiletto Pump",
@@ -394,7 +413,9 @@
       ],
       "image_1x1": "https://thestilettovault.github.io/img/heels/foklysp-studded-spike-pointed-toe-stiletto-pumps/ig_image_1.jpg"
     },
-    "variations_ready": true
+    "variations_ready": true,
+    "posted": true,
+    "posted_date": "2026-08-26T20:35:21.667167"
   },
   {
     "title": "Elegant Black Satin Pointed-Toe Stiletto Pumps — Gold Hoop",
