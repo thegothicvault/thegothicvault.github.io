@@ -25,13 +25,33 @@
     "url": "https://www.amazon.com/dp/B007ST6JUQ?tag=thegothicvaul-20",
     "aff_link": "https://www.amazon.com/dp/B007ST6JUQ?tag=thegothicvaul-20",
     "domain": "amazon.com",
-    "image_url": "",
+    "image_url": "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_image_1.png",
     "commission": "4%",
     "date": "2026-08-10T00:57:18.809833",
     "on_site": true,
     "local_asset": "GELEM/2026-08-25/pleaser-seduce-1020-black-patent-platform-stiletto",
     "downloaded": "2026-08-25",
-    "image_ok": true
+    "image_ok": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_video_2.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/tt_video_1.mp4",
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/tt_video_2.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_image_1.png",
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_image_2.png"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/tt_image_1.png",
+        "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/tt_image_2.png"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/pleaser-seduce-1020-black-patent-platform-ankle-boot/ig_image_1.png"
+    },
+    "variations_ready": true
   },
   {
     "title": "Pleaser Adore-1020 — 7\" Stiletto Lace-Up Platform Boot, Black",
@@ -44,7 +64,7 @@
     "on_site": true,
     "posted": true,
     "variations_ready": true,
-    "posted_date": "2026-08-13T11:11:05.636607",
+    "posted_date": "2026-08-26T11:03:35.228244",
     "assets": {
       "card": "https://thestilettovault.github.io/img/heels/pleaser-adore-1020-card.jpg",
       "ig_imgs": [
