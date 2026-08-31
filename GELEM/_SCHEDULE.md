@@ -1,0 +1,40 @@
+# 📅 GELEM — לוח פרסום (שובץ מחדש 2026-08-25)
+
+כלל: פרסום **יום כן יום לא**, **שבת לא מפרסמים** (משבצת בשבת מוחלקת ליום ראשון).
+מוצר אחד ליום, בשני הערוצים (Instagram + TikTok), 3 סלוטים: 14:00 / 18:00 / 22:00 (IL).
+גילוי שותפים בכל פוסט: #ad + commission earned.
+⚠️ **הערה: הפוסטים מ-21–24.08 לא פורסמו בפועל — הלוז אופס והתחיל מחדש מהיום.**
+
+| # | תאריך | יום | מוצר | לינק | סטטוס |
+|---|-------|-----|------|------|-------|
+| 1 | 2026-08-25 | שלישי | VOGEL VERE — Glitter Stiletto Pump | Amazon 4% | ✅ מופק |
+| 2 | 2026-08-27 | חמישי | DREAM PAIRS — Classic Stiletto Pump | Amazon 4% | ✅ מופק |
+| 3 | 2026-08-30 | ראשון* | 11cm Slingback Pointed-Toe Stiletto | AliExpress 6.9% | ✅ מופק |
+| 4 | 2026-09-01 | שלישי | Black Red-Soled 10cm Stiletto Pump | AliExpress 6.9% | ✅ מופק |
+| 5 | 2026-09-03 | חמישי | DEMOSHINE — Black Patent Stiletto Pump | Amazon 4% | ✅ מופק |
+| 6 | 2026-09-06 | ראשון* | LISHAN — Lace-Up Gladiator Knee-High | Amazon 4% | ✅ מופק |
+| 7 | 2026-09-08 | שלישי | Pleaser Adore-1020 — Platform Stiletto | Amazon 4% | ✅ מופק |
+| 8 | 2026-09-10 | חמישי | Pleaser Seduce-1020 — Patent Platform | Amazon 4% | ✅ מופק |
+| 9 | 2026-09-13 | ראשון* | Foklysp — Studded Spike Stiletto | Amazon 4% | ✅ מופק ומתוזמן (8 פוסטים) |
+| 10 | 2026-09-15 | שלישי | MUCCCUTE — Red Chrome Thigh-High | Amazon 4% | ✅ מופק ומתוזמן (1IG/2TT וידאו + 2 תמונות) |
+| 11 | 2026-09-17 | חמישי | Stiletto Heels — 67% OFF ($16.83, היה $51.01) | AliExpress 6.9% | ✅ מופק (וידאו keyframe: נקי→דיל) — ⏳ ממתין להפצה |
+
+\* הוחלק בגלל שבת (29.8 ו-5.9).
+
+## ממתינים להפקה (ספרייה בלבד — ייכנסו ללוז אחרי הפקה)
+- Elegant Black Satin Stiletto (AliExpress 6.9%) — `GELEM/2026-08-23/elegant-black-satin.../`
+- Hallie Black Butterfly Heels (Public Desire 8%) — `GELEM/2026-08-23/hallie-black-butterfly.../`
+
+## מקורות מדיה
+- #1 → `GELEM/2026-08-17/vogel-vere-glitter-stiletto-pump/`
+- #2 → `GELEM/2026-08-18/`
+- #3 → `GELEM/2026-08-24/11cm-slingback-pointed-toe-stiletto-party-heels/`
+- #4 → `GELEM/2026-08-24/black-red-soled-10cm-pointed-toe-stiletto-pumps/`
+- #5 → `GELEM/2026-08-24/demoshine-black-patent-stiletto-pump/`
+- #6 → `GELEM/2026-08-24/lishan-gladiator-stiletto-knee-high/`
+- #7 → `GELEM/2026-08-25/pleaser-adore-1020-stiletto-lace-up-platform/`
+- #8 → `GELEM/2026-08-25/pleaser-seduce-1020-black-patent-platform-stiletto/`
+- #11 → `GELEM/stiletto-heels-3256812312762342/` (post_image.jpg + video.mp4)
+
+## תהליך פרסום
+כל פוסט: העלאה ל-Instagram + TikTok ב-3 הסלוטים. Instagram דרך Metricool (ידני), TikTok דרך MCP.

@@ -20,7 +20,7 @@ Roles:  [agent] = Claude via the Magnific MCP tools.   [py] = this module.
 State for the async human step lives in data/orchestrator_state.json so the
 Telegram callback (a different process) and the agent can hand off cleanly.
 """
-import os, sys, json, time
+import os, sys, json, time, shutil
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -121,9 +121,34 @@ def pending_video_jobs():
 
 # ---------------- finalize (after videos are downloaded) ----------------
 
+def build_drop(slug):
+    """Lay the FINAL media into GELEM/<slug>/drop/ under the ig_/tt_ names that
+    pickup_drop.classify_media routes per platform. The Smart-Heel design is one
+    still + one 9:16 video that serve BOTH channels, so each is mirrored to
+    Instagram and TikTok. This keeps the raw ad_*/source files out of the drop
+    entirely — pickup_drop points at this subfolder via --folder.
+    Returns the drop dir, or None if the post_image is missing."""
+    folder = GELEM / slug
+    post_image = folder / "post_image.jpg"
+    video      = folder / "video.mp4"
+    if not post_image.exists():
+        print(f"! {slug}: no post_image to drop"); return None
+    drop = folder / "drop"
+    drop.mkdir(exist_ok=True)
+    shutil.copyfile(post_image, drop / "ig_image_1.jpg")
+    shutil.copyfile(post_image, drop / "tt_image_1.jpg")
+    if video.exists():
+        shutil.copyfile(video, drop / "ig_video_1.mp4")
+        shutil.copyfile(video, drop / "tt_video_1.mp4")
+    else:
+        print(f"  ~ {slug}: no video.mp4 yet — drop has stills only")
+    print(f"  drop ready: {drop} ({'image+video' if video.exists() else 'image only'})")
+    return drop
+
+
 def finalize(slug):
-    """Burn the deal overlay on the chosen ad and hand the posts to social_publisher.
-    Runs once the two videos are downloaded into GELEM/<slug>/."""
+    """Burn the deal overlay on the chosen ad and stage the per-platform drop for
+    social_publisher. Runs once the 9:16 video is downloaded into GELEM/<slug>/."""
     st = get_state(slug)
     chosen = st.get("chosen")
     if not chosen:
@@ -132,12 +157,14 @@ def finalize(slug):
     ad_path = GELEM / slug / chosen
     posted_img = overlay_mod.apply_overlay(str(ad_path), deal,
                                            str(GELEM / slug / "post_image.jpg"))
+    drop = build_drop(slug)
     set_state(slug, status="finalized",
               post_image=posted_img,
               video=str(GELEM / slug / "video.mp4"),   # one 9:16 video -> both IG + TikTok
+              drop=str(drop) if drop else None,
               deal=deal)
     print(f"{slug}: finalized -> {Path(posted_img).name if posted_img else '(no deal overlay)'}")
-    print("  next: social_publisher schedules IG + TikTok (14/18/22 IL) via Zernio")
+    print(f"  next: pickup_drop.py {slug} --from-gelem --folder {slug}/drop --push --publish")
     return True
 
 
