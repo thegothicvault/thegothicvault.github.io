@@ -219,26 +219,44 @@ def download_to_gelem(url, title, domain="", image_url="", aff_link="", commissi
     rel_dir = os.path.relpath(dest_dir, PROJECT_ROOT).replace("\\", "/")
     if os.path.exists(dest):
         return rel_dir, True
-    # AliExpress: always wait for Ofer's own photos (better/multiple angles) —
-    # never auto-scrape, even when og:image would work.
-    if "aliexpress." in (domain or "") or "aliexpress." in url:
-        print(f"[gelem] AliExpress — awaiting your photos: {rel_dir}")
-        return rel_dir, False
-    src = _resolve_image_url(url, domain, image_url)
+    # Auto-fetch source from the scout-provided image_url. This works for the
+    # AliExpress media CDN too (the old anti-scrape wait was what stranded every
+    # AliExpress lead on _LINK.txt) — the automatic chain needs a source to run.
+    # Any photo Ofer sends afterwards still lands as an extra angle (img_2, …).
+    src = image_url or _resolve_image_url(url, domain, image_url)
     if not src:
         print(f"[gelem] folder ready, image pending (send photo): {rel_dir}")
         return rel_dir, False
-    try:
-        import requests
-        r = requests.get(src, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
-        r.raise_for_status()
-        with open(dest, "wb") as f:
-            f.write(r.content)
+    if _fetch_image(src, dest):
         print(f"[gelem] downloaded → {rel_dir}/source.jpg")
         return rel_dir, True
+    print(f"[gelem] image fetch failed — pending photo: {rel_dir}")
+    return rel_dir, False
+
+
+def _fetch_image(src, dest):
+    """Fetch an image to dest. Try requests first; fall back to curl, which gets
+    past the AliExpress media-CDN TLS fingerprint that rejects requests under load."""
+    ua = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    try:
+        import requests
+        r = requests.get(src, headers={"User-Agent": ua}, timeout=20)
+        r.raise_for_status()
+        if r.content:
+            with open(dest, "wb") as f:
+                f.write(r.content)
+            return True
     except Exception as e:
-        print(f"[gelem] image fetch failed ({e}) — pending photo: {rel_dir}")
-        return rel_dir, False
+        print(f"[gelem] requests fetch failed ({e}); trying curl")
+    try:
+        import subprocess
+        rc = subprocess.run(["curl", "-s", "-L", "-A", ua, "-o", dest, src],
+                            timeout=60).returncode
+        return rc == 0 and os.path.exists(dest) and os.path.getsize(dest) > 0
+    except Exception as e:
+        print(f"[gelem] curl fetch failed ({e})")
+        return False
 
 def _autobuild_worklib(item):
     """Auto-generate the work library (captions) for a product with content.
@@ -297,6 +315,10 @@ def attach_photo_to_pending(photo_path, window_min=45):
         set_photo_target(item["local_asset"])      # stay on this product
         print(f"[gelem] photo attached → {item['local_asset']}/{fname}")
         _autobuild_worklib(item)
+        # first photo (source.jpg) completes the lead → queue it for production
+        if fname == "source.jpg":
+            _enqueue_production(item["url"], item.get("title", ""), item["local_asset"],
+                                image_url=item.get("image_url", ""), deal=item.get("deal", {}))
         return f"{item.get('title','product')}|{fname}"
     except Exception as e:
         print(f"[gelem] attach failed: {e}")
@@ -325,6 +347,25 @@ def _deal_for_url(url):
         if p.get("url") == url:
             return p.get("deal") or {}
     return {}
+
+_PROD_QUEUE = os.path.join(DATA_DIR, "production_queue.json")
+
+def _enqueue_production(url, title, local_asset, image_url="", deal=None):
+    """Append a freshly-approved lead to the production queue the runner drains.
+    status='approved' → the runner (a local Claude session/scheduled task) picks it
+    up, runs the Space to 4 ads, and pushes them to Telegram for the A/B/C/D pick.
+    Idempotent by url. This is the missing link that makes approval → production
+    automatic instead of stranding the lead after record_approval."""
+    q = load_json(_PROD_QUEUE, [])
+    if any(e.get("url") == url for e in q):
+        return
+    q.append({
+        "url": url, "title": title, "local_asset": local_asset,
+        "image_url": image_url, "deal": deal or {},
+        "status": "approved", "approved_ts": datetime.now().isoformat(),
+    })
+    save_json(_PROD_QUEUE, q)
+    print(f"[queue] enqueued for production: {title[:40]}")
 
 def record_approval(url, title, image_url="", commission="", domain=""):
     aff_link = inject_affiliate_link(url)
@@ -366,6 +407,10 @@ def record_approval(url, title, image_url="", commission="", domain=""):
         # library (captions) right now — fully automatic, no "done" needed.
         if image_ok:
             _autobuild_worklib(catalog[-1])
+            # source is in place → hand the lead to the production queue so the
+            # runner turns it into ads automatically (no manual kick needed).
+            _enqueue_production(url, title, local_asset,
+                                image_url=image_url, deal=_deal_for_url(url))
         else:
             # awaiting photos → make this the product the next photos attach to.
             set_photo_target(local_asset)
