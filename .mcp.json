@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "magnific": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.magnific.com"],
+      "env": {}
+    }
+  }
+}
