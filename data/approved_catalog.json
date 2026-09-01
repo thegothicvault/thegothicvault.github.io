@@ -727,14 +727,16 @@
       "image_1x1": "https://thestilettovault.github.io/img/heels/stiletto-heels-3256812312762342/ig_image_1.jpg"
     },
     "variations_ready": true,
-    "on_site": true
+    "on_site": true,
+    "posted": true,
+    "posted_date": "2026-09-01T16:31:21.097862"
   },
   {
     "title": "Pointed-Toe Pump",
     "url": "https://www.aliexpress.com/item/3256807553221348.html",
     "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256807553221348.html",
     "domain": "aliexpress.com",
-    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S4da99cfb99b34aad95e40d9c7dff1b30q.jpg",
+    "image_url": "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/ig_image_1.jpg",
     "commission": "6.9%",
     "deal": {
       "sale": 54.52,
@@ -747,7 +749,23 @@
     "local_asset": "GELEM/2026-09-01/pointed-toe-pump-3256807553221348",
     "image_ok": false,
     "downloaded": "",
-    "on_site": true
+    "on_site": true,
+    "assets": {
+      "videos_ig": [
+        "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/ig_video_1.mp4"
+      ],
+      "videos_tt": [
+        "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/tt_video_1.mp4"
+      ],
+      "images_ig": [
+        "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/ig_image_1.jpg"
+      ],
+      "images_tt": [
+        "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/tt_image_1.jpg"
+      ],
+      "image_1x1": "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256807553221348/ig_image_1.jpg"
+    },
+    "variations_ready": true
   },
   {
     "title": "Stiletto Heels",
