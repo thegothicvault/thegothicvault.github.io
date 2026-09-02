@@ -104,10 +104,19 @@ def short_name(title, n=26):
 
 def card_html(item, slug):
     src   = resolve_image(item, slug)
-    name  = esc(short_name(item.get("title", "")))
     href  = esc(item.get("aff_link") or item.get("url", ""))
-    price = esc(item.get("price", "") or "Shop")
     alt   = esc(item.get("title", ""))
+    # Names/prices come from the real deal (what the bot sent to Telegram), since
+    # the raw title is generic ("Stiletto Heels"). Discount differentiates the name;
+    # the live sale price replaces the placeholder "Shop".
+    deal  = item.get("deal", {}) or {}
+    title = short_name(item.get("title", ""))
+    disc  = str(deal.get("discount", "") or "").strip()
+    name  = f"{title} · {disc} OFF" if disc and disc not in ("0%", "0", "") else title
+    sale  = deal.get("sale")
+    price = f"${sale}" if sale else (item.get("price", "") or "Shop")
+    name  = esc(name)
+    price = esc(str(price))
     return (
         '      <a class="product-card" href="{href}" target="_blank" rel="noopener">\n'
         '        <img src="{src}" alt="{alt}" loading="lazy">\n'
