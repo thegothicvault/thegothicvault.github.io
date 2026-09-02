@@ -22,7 +22,8 @@ from datetime import datetime
 
 sys.stdout.reconfigure(encoding="utf-8") if sys.stdout else None
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import space_runner   # single source of truth for slugify (AliExpress /item ids)
+import space_runner      # single source of truth for slugify (AliExpress /item ids)
+import affiliate_links   # subid-tagged deeplinks for per-shoe sale attribution
 
 ROOT         = Path(__file__).resolve().parent.parent      # E:\PROJECTS\thegothicvault
 CATALOG_FILE = ROOT / "data" / "approved_catalog.json"
@@ -118,7 +119,10 @@ def short_name(title, n=26):
 
 def card_html(item, slug):
     src   = resolve_image(item, slug)
-    href  = esc(item.get("aff_link") or item.get("url", ""))
+    # Tag the affiliate link with subid=slug so a sale on Admitad is attributable
+    # to THIS heel. Visitors reach the site via link-in-bio, so tagging the card
+    # here is what makes per-shoe sales measurable.
+    href  = esc(affiliate_links.affiliate_link(item, subid=slug))
     alt   = esc(item.get("title", ""))
     # Names/prices come from the real deal (what the bot sent to Telegram), since
     # the raw title is generic ("Stiletto Heels"). Discount differentiates the name;

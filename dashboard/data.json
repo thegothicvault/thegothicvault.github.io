@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T15:05:36",
+  "generated_at": "2026-09-02T15:36:03",
   "funnel": {
     "scanned": 64,
     "approved": 35,
@@ -719,11 +719,11 @@
     }
   ],
   "sales": {
-    "source_status": "unavailable",
-    "note": "No module named 'admitad_stats'",
     "total_sales": 0,
-    "total_revenue": 0,
-    "per_shoe": {}
+    "total_revenue": 0.0,
+    "pending": 0,
+    "per_shoe": {},
+    "source_status": "admitad"
   },
   "traffic": {
     "source_status": "unavailable",
