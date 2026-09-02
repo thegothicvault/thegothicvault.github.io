@@ -57,18 +57,22 @@ slugify = space_runner.slugify
 
 
 def find_variation_image(slug):
-    """Return the first generated image in GELEM/<slug>/, if any."""
+    """OUR produced image for this heel — never the AliExpress source/scrape.
+    Priority: the finished post_image (chosen ad + real deal overlay), else any
+    ad candidate. Returns None if we have not produced anything yet (caller then
+    skips the heel — the site shows only heels we actually made visuals for)."""
     folder = GELEM_DIR / slug
     if not folder.is_dir():
-        # also try a loose match (folders sometimes carry a suffix)
         matches = [d for d in GELEM_DIR.glob(f"{slug}*") if d.is_dir()] if GELEM_DIR.is_dir() else []
         folder = matches[0] if matches else folder
-    if folder.is_dir():
-        imgs = sorted(p for p in folder.iterdir()
-                      if p.suffix.lower() in IMG_EXTS)
-        if imgs:
-            return imgs[0]
-    return None
+    if not folder.is_dir():
+        return None
+    post = folder / "post_image.jpg"
+    if post.exists():
+        return post
+    ads = sorted(p for p in folder.iterdir()
+                 if p.name.lower().startswith("ad_") and p.suffix.lower() in IMG_EXTS)
+    return ads[0] if ads else None
 
 
 def resolve_image(item, slug):
@@ -86,7 +90,7 @@ def resolve_image(item, slug):
             return f"img/heels/{slug}.jpg"
         except Exception as e:
             print(f"  ! copy failed for {slug}: {e}")
-    return item.get("image_url", "") or ""
+    return ""   # no produced image → heel is skipped (never fall back to AliExpress)
 
 
 def esc(s):
@@ -141,8 +145,10 @@ def rebuild(limit):
 
     # newest first, cap
     items = sorted(catalog, key=lambda x: x.get("date", ""), reverse=True)
-    # skip items with no usable link
-    items = [it for it in items if (it.get("aff_link") or it.get("url"))][:limit]
+    # need a usable affiliate link AND a produced visual of our own (post_image/ad).
+    # heels we only approved but never produced are held back until they have art.
+    items = [it for it in items
+             if (it.get("aff_link") or it.get("url")) and find_variation_image(slugify(it))][:limit]
 
     inner = build_cards(items)
     injection = f"{START_MARK}\n{inner}\n    {END_MARK}"
