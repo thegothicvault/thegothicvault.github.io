@@ -90,7 +90,21 @@ def resolve_image(item, slug):
             return f"img/heels/{slug}.jpg"
         except Exception as e:
             print(f"  ! copy failed for {slug}: {e}")
-    return ""   # no produced image → heel is skipped (never fall back to AliExpress)
+    hosted = our_hosted_image(item)   # older heels: produced assets already on our Pages
+    if hosted:
+        return hosted
+    return ""   # only AliExpress raw / broken remains → heel is skipped
+
+
+def our_hosted_image(item):
+    """A produced image already hosted on OUR site (thestilettovault) — this is
+    ours, not an AliExpress scrape. Covers heels made through the older flow whose
+    art lives in the catalog `assets`/`image_url` rather than GELEM."""
+    a = item.get("assets", {}) or {}
+    for v in [a.get("image_1x1")] + (a.get("images_ig") or []) + [item.get("image_url", "")]:
+        if v and "thestilettovault.github.io" in v:
+            return v
+    return None
 
 
 def esc(s):
@@ -157,7 +171,8 @@ def rebuild(limit):
     # need a usable affiliate link AND a produced visual of our own (post_image/ad).
     # heels we only approved but never produced are held back until they have art.
     items = [it for it in items
-             if (it.get("aff_link") or it.get("url")) and find_variation_image(slugify(it))][:limit]
+             if (it.get("aff_link") or it.get("url"))
+             and (find_variation_image(slugify(it)) or our_hosted_image(it))][:limit]
 
     inner = build_cards(items)
     injection = f"{START_MARK}\n{inner}\n    {END_MARK}"
