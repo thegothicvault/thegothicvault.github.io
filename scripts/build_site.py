@@ -135,15 +135,19 @@ def card_html(item, slug):
     price = f"${sale}" if sale else (item.get("price", "") or "Shop")
     name  = esc(name)
     price = esc(str(price))
+    # GA event on click → we see how many people clicked "buy" per shoe, live,
+    # even before a sale lands in Admitad. Guarded so it never breaks if gtag is blocked.
+    onclick = (f"if(window.gtag)gtag('event','affiliate_click',"
+               f"{{'shoe':'{slug}','discount':'{disc}'}});")
     return (
-        '      <a class="product-card" href="{href}" target="_blank" rel="noopener">\n'
+        '      <a class="product-card" href="{href}" target="_blank" rel="noopener" onclick="{onclick}">\n'
         '        <img src="{src}" alt="{alt}" loading="lazy">\n'
         '        <div class="card-info">\n'
         '          <span class="card-name">{name}</span>\n'
         '          <span class="card-price">{price}</span>\n'
         '        </div>\n'
         '      </a>'
-    ).format(href=href, src=esc(src), alt=alt, name=name, price=price)
+    ).format(href=href, src=esc(src), alt=alt, name=name, price=price, onclick=onclick)
 
 
 def build_cards(items):
