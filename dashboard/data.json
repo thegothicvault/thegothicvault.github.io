@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-03T10:04:46",
+  "generated_at": "2026-09-03T11:35:04",
   "funnel": {
     "scanned": 64,
     "approved": 37,
-    "produced": 19,
-    "scheduled": 14,
-    "published": 18
+    "produced": 21,
+    "scheduled": 16,
+    "published": 20
   },
   "shoes": [
     {
@@ -17,8 +17,8 @@
       "discount": "74%",
       "rating": "3.8",
       "sold": "428 sold",
-      "status": "approved",
-      "on_site": false,
+      "status": "published",
+      "on_site": true,
       "subid": "stiletto-heels-3256809453131649",
       "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256809453131649.html",
       "date": "2026-09-03",
@@ -34,8 +34,8 @@
       "discount": "24%",
       "rating": "",
       "sold": "",
-      "status": "approved",
-      "on_site": false,
+      "status": "published",
+      "on_site": true,
       "subid": "stiletto-heels-3256812851886473",
       "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256812851886473.html",
       "date": "2026-09-03",
@@ -750,6 +750,22 @@
       "product": "Pointed-Toe Pump — 20% OFF ($76.87, היה $96.22)",
       "source": "AliExpress 6.9%",
       "status": "✅ מתוזמן (4 פוסטים IG+TT)"
+    },
+    {
+      "n": 15,
+      "date": "2026-09-27",
+      "day": "ראשון*",
+      "product": "Stiletto Heels — 74% OFF ($9.71) [אוטומציה]",
+      "source": "AliExpress 6.9%",
+      "status": "✅ מתוזמן (4 פוסטים IG+TT)"
+    },
+    {
+      "n": 16,
+      "date": "2026-09-29",
+      "day": "שלישי",
+      "product": "Stiletto Heels — 24% OFF ($95.04) [אוטומציה]",
+      "source": "AliExpress 6.9%",
+      "status": "✅ מתוזמן (4 פוסטים IG+TT)"
     }
   ],
   "sales": {
@@ -763,7 +779,7 @@
     "source_status": "unavailable",
     "visitors": null,
     "clicks": null,
-    "note": "No module named 'ga_stats'"
+    "note": "GA4_PROPERTY_ID not set"
   },
   "followers": {
     "source_status": "unavailable",

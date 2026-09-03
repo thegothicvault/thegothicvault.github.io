@@ -177,19 +177,24 @@ def main(push=False):
     catalog = load_catalog()
     sales_data = sales()
     per_shoe = sales_data.get("per_shoe", {}) if isinstance(sales_data, dict) else {}
+    traffic_data = traffic()
+    clicks_by_shoe = traffic_data.get("per_shoe", {}) if isinstance(traffic_data, dict) else {}
     sh = shoes(catalog)
-    for s in sh:                                 # merge sales into each shoe
+    for s in sh:                                 # merge sales + clicks into each shoe
         rec = per_shoe.get(s["subid"])
         if rec:
             s["sales"] = rec.get("sales")
             s["clicks"] = rec.get("clicks")
+        crec = clicks_by_shoe.get(s["subid"])
+        if crec and s.get("clicks") is None:
+            s["clicks"] = crec.get("clicks")
     data = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "funnel": funnel(catalog),
         "shoes": sh,
         "schedule": parse_schedule(),
         "sales": sales_data,
-        "traffic": traffic(),
+        "traffic": traffic_data,
         "followers": followers(),
     }
     DASH.mkdir(exist_ok=True)
