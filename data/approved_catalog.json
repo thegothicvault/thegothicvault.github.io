@@ -841,6 +841,46 @@
       "image_1x1": "https://thestilettovault.github.io/img/heels/pointed-toe-pump-3256812471729513/ig_image_1.jpg"
     },
     "variations_ready": true,
-    "on_site": true
+    "on_site": true,
+    "posted": true,
+    "posted_date": "2026-09-02T11:43:33.966444"
+  },
+  {
+    "title": "Stiletto Heels",
+    "url": "https://www.aliexpress.com/item/3256809453131649.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256809453131649.html",
+    "domain": "aliexpress.com",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S91a62368087f4393ae49269da1f5dbdd6.jpg",
+    "commission": "6.9%",
+    "deal": {
+      "sale": 9.71,
+      "was": 37.16,
+      "discount": "74%",
+      "rating": "3.8",
+      "sold": "428 sold"
+    },
+    "date": "2026-09-03T08:01:09.382317",
+    "local_asset": "GELEM/2026-09-03/stiletto-heels-3256809453131649",
+    "image_ok": true,
+    "downloaded": "2026-09-03"
+  },
+  {
+    "title": "Stiletto Heels",
+    "url": "https://www.aliexpress.com/item/3256812851886473.html",
+    "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256812851886473.html",
+    "domain": "aliexpress.com",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Sae904a107b0c4b6094557dd057e04b3aI.jpg",
+    "commission": "6.9%",
+    "deal": {
+      "sale": 95.04,
+      "was": 125.06,
+      "discount": "24%",
+      "rating": "",
+      "sold": ""
+    },
+    "date": "2026-09-03T08:01:16.229857",
+    "local_asset": "GELEM/2026-09-03/stiletto-heels-3256812851886473",
+    "image_ok": true,
+    "downloaded": "2026-09-03"
   }
 ]
