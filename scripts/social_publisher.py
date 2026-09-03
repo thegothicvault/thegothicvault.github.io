@@ -91,8 +91,18 @@ def media_url(item):
 
 def build_caption(item):
     title = item.get("title", "").strip()
+    # Include the deal so each heel's caption is unique — the raw title is generic
+    # ("Stiletto Heels"/"Pointed-Toe Pump") and Zernio rejects duplicate content (409).
+    deal = item.get("deal", {}) or {}
+    disc = str(deal.get("discount", "") or "").strip()
+    sale = deal.get("sale")
+    headline = title
+    if disc and disc not in ("0%", "0", ""):
+        headline += f" · {disc} OFF"
+    if sale:
+        headline += f" · ${sale}"
     coupon = "OFERRABIN" if "darkinlove.com" in item.get("domain", "") else None
-    lines = [f"{title} 🖤"]
+    lines = [f"{headline} 🖤"]
     if coupon:
         lines.append(f"Use code {coupon} for $10 off")
     lines.append(f"Shop the link in bio → {SITE_URL}")
@@ -125,15 +135,40 @@ def resolve_media(item):
     return "", ""
 
 
-def _zernio_post(content, platform, account_id, media_url, media_type, scheduled_for=None):
-    """One Zernio post to a single platform. Returns (ok, info)."""
+# TikTok requires these to DIRECT-POST (video.publish). Without them Zernio can only
+# drop the video into the TikTok inbox as a draft ("awaiting-finalize"), so nothing
+# goes live until the user finalises it in the app.
+TIKTOK_SETTINGS = {
+    "privacy_level": "PUBLIC_TO_EVERYONE",
+    "allow_comment": True,
+    "allow_duet": True,
+    "allow_stitch": True,
+    "content_preview_confirmed": True,
+    "express_consent_given": True,
+}
+
+def _zernio_post(content, platform, account_id, media_url, media_type,
+                 scheduled_for=None, platform_data=None):
+    """One Zernio post to a single platform. `media_url` may be a single URL or a
+    list of URLs. `platform_data` → platformSpecificData (e.g. Instagram Reel feed
+    sharing). Returns (ok, info)."""
+    urls = media_url if isinstance(media_url, (list, tuple)) else [media_url]
+    media_items = [{"type": media_type, "url": u} for u in urls if u]
+    target = {"platform": platform, "accountId": account_id}
+    if platform_data:
+        target["platformSpecificData"] = platform_data
     payload = {
         "content": content,
         "scheduledFor": scheduled_for or SCHEDULE_LOCAL,   # e.g. 2026-08-10T22:00:00
         "timezone": "Asia/Jerusalem",
-        "platforms": [{"platform": platform, "accountId": account_id}],
-        "mediaItems": [{"type": media_type, "url": media_url}],
+        "platforms": [target],
+        "mediaItems": media_items,
     }
+    # NOTE: sending tiktokSettings with privacy PUBLIC_TO_EVERYONE fails Zernio
+    # preflight for this (unaudited) app — posts land in the TikTok inbox as drafts
+    # to finalize in-app. Left off until the account is audited for direct posting.
+    # if platform == "tiktok":
+    #     payload["tiktokSettings"] = TIKTOK_SETTINGS
     import requests
     r = requests.post(
         f"{ZERNIO_API_URL}/posts",
@@ -219,41 +254,65 @@ def find_by_slug(want):
 
 
 def drop_assets(item):
-    """The 3 posts for a heel drop, in posting order, with PER-PLATFORM media.
-       Instagram rejects stills taller than 4:5, so the vertical-image post
-       serves IG a 4:5 (falling back to the 1:1) while TikTok gets the 9:16.
-       Each post: {label, media_type, ig, tk}. Posts with no usable media on
-       either platform are dropped so a partial drop still posts what it has."""
+    """Dynamic posts for a heel drop — reflects whatever the folder actually holds
+    (variable per shoe). Each VIDEO becomes its own post (IG video[i] paired with
+    TikTok video[i]); all images per platform become ONE carousel post.
+    Each post: {label, media_type, ig, tk} where ig/tk is a URL (video) or a list
+    of URLs (image carousel). Falls back to the legacy single-asset keys."""
     a = item.get("assets", {}) or {}
-    ig_vertical = a.get("image_4x5") or a.get("image_1x1")   # IG-safe still
-    plan = [
-        {"label": "1:1 image",  "media_type": "image",
-         "ig": a.get("image_1x1"),  "tk": a.get("image_1x1")},
-        {"label": "9:16 image", "media_type": "image",
-         "ig": ig_vertical,         "tk": a.get("image_9x16")},
-        {"label": "9:16 video", "media_type": "video",
-         "ig": a.get("video"),      "tk": a.get("video")},
-    ]
-    return [p for p in plan if p["ig"] or p["tk"]]
+    ig_v = a.get("videos_ig") or ([a["video"]] if a.get("video") else [])
+    tt_v = a.get("videos_tt") or ([a["video"]] if a.get("video") else [])
+    ig_i = a.get("images_ig") or [x for x in (a.get("image_1x1"),) if x]
+    tt_i = a.get("images_tt") or [x for x in (a.get("image_9x16"),) if x]
+
+    posts = []
+    for i in range(max(len(ig_v), len(tt_v))):        # each video = its own post
+        posts.append({
+            "label": f"video {i+1}", "media_type": "video",
+            "ig": ig_v[i] if i < len(ig_v) else None,
+            "tk": tt_v[i] if i < len(tt_v) else None,
+        })
+    for i in range(max(len(ig_i), len(tt_i))):        # each image = its own post
+        posts.append({
+            "label": f"image {i+1}", "media_type": "image",
+            "ig": ig_i[i] if i < len(ig_i) else None,
+            "tk": tt_i[i] if i < len(tt_i) else None,
+        })
+    return [p for p in posts if p["ig"] or p["tk"]]
 
 
-def schedule_drop(item, slots=None, do_publish=False):
-    """Schedule one heel as 3 posts across the day (IG + TikTok each)."""
+def schedule_drop(item, slots=None, do_publish=False, date=None):
+    """Schedule one heel as 3 posts across the day (IG + TikTok each).
+    `date` (a datetime.date or 'YYYY-MM-DD') pins the posts to a specific day —
+    e.g. this heel's every-other-day slot — instead of the next free day."""
     slug  = slugify(item)
     slots = slots or DEFAULT_SLOTS
     posts = drop_assets(item)
     if not posts:
         print(f"  ! {slug}: no hosted assets (item['assets']) — run pickup_drop first")
         return False
-    if len(posts) < len(slots):
+    # Fit the number of time-slots to the number of posts (content varies per shoe).
+    SLOT_POOL = ["12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
+    if len(posts) <= len(slots):
         slots = slots[:len(posts)]
+    else:
+        pool = list(dict.fromkeys(list(slots) + SLOT_POOL))   # given slots first, then fill
+        slots = pool[:len(posts)]
+        if len(slots) < len(posts):                           # still short → space hourly
+            slots = [f"{10 + i}:00" for i in range(len(posts))]
+
+    base = None
+    if date:
+        if isinstance(date, str):
+            date = datetime.datetime.strptime(date, "%Y-%m-%d").date()
+        base = datetime.datetime.combine(date, datetime.time(0, 0))
 
     full_caption = build_caption(item)
     tiktok_img_caption = f"{item.get('title','').strip()[:60]} 🖤 thestilettovault.github.io"
 
     any_ok = False
     for post, hhmm in zip(posts, slots):
-        when       = slot_iso(hhmm)
+        when       = slot_iso(hhmm, base)
         label      = post["label"]
         media_type = post["media_type"]
         ig_caption = full_caption
@@ -274,9 +333,13 @@ def schedule_drop(item, slots=None, do_publish=False):
             print("  ! ZERNIO_API_KEY not set — cannot publish")
             return False
         for platform, account_id, content, media_url in targets:
+            # Instagram video → Reel that also lands in the feed (post + reel).
+            pdata = ({"shareToFeed": True}
+                     if platform == "instagram" and media_type == "video" else None)
             try:
                 ok, info = _zernio_post(content, platform, account_id,
-                                        media_url, media_type, scheduled_for=when)
+                                        media_url, media_type, scheduled_for=when,
+                                        platform_data=pdata)
                 print(f"  {'✅' if ok else '!'} {slug} · {label} → {platform} @ {when}: {info}")
                 any_ok = any_ok or ok
             except Exception as e:

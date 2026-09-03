@@ -17,9 +17,14 @@
 | 8 | 2026-09-10 | חמישי | Pleaser Seduce-1020 — Patent Platform | Amazon 4% | ✅ מופק |
 | 9 | 2026-09-13 | ראשון* | Foklysp — Studded Spike Stiletto | Amazon 4% | ✅ מופק ומתוזמן (8 פוסטים) |
 | 10 | 2026-09-15 | שלישי | MUCCCUTE — Red Chrome Thigh-High | Amazon 4% | ✅ מופק ומתוזמן (1IG/2TT וידאו + 2 תמונות) |
-| 11 | 2026-09-17 | חמישי | Stiletto Heels — 67% OFF ($16.83, היה $51.01) | AliExpress 6.9% | ✅ מופק (וידאו keyframe: נקי→דיל) — ⏳ ממתין להפצה |
+| 11 | 2026-09-17 | חמישי | Stiletto Heels — 67% OFF ($16.83, היה $51.01) | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
+| 12 | 2026-09-20 | ראשון* | Pointed-Toe Pump — 58% OFF ($54.52, היה $131.30) | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
+| 13 | 2026-09-22 | שלישי | Stiletto Heels — 33% OFF ($18.25, היה $27.39) | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
+| 14 | 2026-09-24 | חמישי | Pointed-Toe Pump — 20% OFF ($76.87, היה $96.22) | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
+| 15 | 2026-09-27 | ראשון* | Stiletto Heels — 74% OFF ($9.71) [אוטומציה] | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
+| 16 | 2026-09-29 | שלישי | Stiletto Heels — 24% OFF ($95.04) [אוטומציה] | AliExpress 6.9% | ✅ מתוזמן (4 פוסטים IG+TT) |
 
-\* הוחלק בגלל שבת (29.8 ו-5.9).
+\* הוחלק בגלל שבת (29.8, 5.9 ו-19.9).
 
 ## ממתינים להפקה (ספרייה בלבד — ייכנסו ללוז אחרי הפקה)
 - Elegant Black Satin Stiletto (AliExpress 6.9%) — `GELEM/2026-08-23/elegant-black-satin.../`
@@ -35,6 +40,8 @@
 - #7 → `GELEM/2026-08-25/pleaser-adore-1020-stiletto-lace-up-platform/`
 - #8 → `GELEM/2026-08-25/pleaser-seduce-1020-black-patent-platform-stiletto/`
 - #11 → `GELEM/stiletto-heels-3256812312762342/` (post_image.jpg + video.mp4)
+- #12 → `GELEM/pointed-toe-pump-3256807553221348/` (drop/ מוכן)
+- #13 → `GELEM/stiletto-heels-3256805980328073/` (drop/ מוכן)
 
 ## תהליך פרסום
 כל פוסט: העלאה ל-Instagram + TikTok ב-3 הסלוטים. Instagram דרך Metricool (ידני), TikTok דרך MCP.
