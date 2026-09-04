@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.aliexpress.com/item/3256812471729513.html",
+    "title": "Pointed-Toe Pump",
+    "local_asset": "GELEM/2026-09-02/pointed-toe-pump-3256812471729513",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S2c934675d4eb47c5a04ae0ec17e26418X.jpg",
+    "deal": {
+      "sale": 76.87,
+      "was": 96.22,
+      "discount": "20%",
+      "rating": "",
+      "sold": "1 sold"
+    },
+    "status": "done",
+    "approved_ts": "2026-09-02T11:20:55.524994"
+  },
+  {
+    "url": "https://www.aliexpress.com/item/3256809453131649.html",
+    "title": "Stiletto Heels",
+    "local_asset": "GELEM/2026-09-03/stiletto-heels-3256809453131649",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S91a62368087f4393ae49269da1f5dbdd6.jpg",
+    "deal": {
+      "sale": 9.71,
+      "was": 37.16,
+      "discount": "74%",
+      "rating": "3.8",
+      "sold": "428 sold"
+    },
+    "status": "done",
+    "approved_ts": "2026-09-03T08:01:09.417832"
+  },
+  {
+    "url": "https://www.aliexpress.com/item/3256812851886473.html",
+    "title": "Stiletto Heels",
+    "local_asset": "GELEM/2026-09-03/stiletto-heels-3256812851886473",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/Sae904a107b0c4b6094557dd057e04b3aI.jpg",
+    "deal": {
+      "sale": 95.04,
+      "was": 125.06,
+      "discount": "24%",
+      "rating": "",
+      "sold": ""
+    },
+    "status": "done",
+    "approved_ts": "2026-09-03T08:01:16.235236"
+  },
+  {
+    "url": "https://www.aliexpress.com/item/3256808461627848.html",
+    "title": "Stiletto Heels",
+    "local_asset": "GELEM/2026-09-04/stiletto-heels-3256808461627848",
+    "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S2936a2d5e70f4ae3a75db5a0a85c8fd3Z.jpg",
+    "deal": {
+      "sale": 14.47,
+      "was": 16.75,
+      "discount": "14%",
+      "rating": "",
+      "sold": "1 sold"
+    },
+    "status": "done",
+    "approved_ts": "2026-09-04T08:18:27.908906"
+  }
+]
