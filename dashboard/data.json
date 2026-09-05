@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-04T10:02:40",
+  "generated_at": "2026-09-05T10:00:25",
   "funnel": {
     "scanned": 64,
     "approved": 38,
     "produced": 22,
-    "scheduled": 16,
-    "published": 20
+    "scheduled": 17,
+    "published": 21
   },
   "shoes": [
     {
@@ -17,7 +17,7 @@
       "discount": "14%",
       "rating": "",
       "sold": "1 sold",
-      "status": "produced",
+      "status": "published",
       "on_site": true,
       "subid": "stiletto-heels-3256808461627848",
       "aff_link": "https://rzekl.com/g/1e8d1144949a9d9ab95916525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F3256808461627848.html",
@@ -781,6 +781,14 @@
       "date": "2026-09-29",
       "day": "שלישי",
       "product": "Stiletto Heels — 24% OFF ($95.04) [אוטומציה]",
+      "source": "AliExpress 6.9%",
+      "status": "✅ מתוזמן (4 פוסטים IG+TT)"
+    },
+    {
+      "n": 17,
+      "date": "2026-10-01",
+      "day": "חמישי",
+      "product": "Stiletto Heels — 14% OFF ($14.47) [אוטומציה]",
       "source": "AliExpress 6.9%",
       "status": "✅ מתוזמן (4 פוסטים IG+TT)"
     }
