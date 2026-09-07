@@ -76,6 +76,8 @@ _עודכן: 2026-09-04_
 
 9. **בדוק `posted` לפני הפצה.** הפצה כפולה של אותו מוצר יצרה duplicate. **לקח:** לבדוק סטטוס לפני שיבוץ.
 
+10. **TikTok "at capacity" → self-heal, לא draft.** ל-direct posting של TikTok יש תקרת קצב משותפת ב-Zernio; ריכוז פוסטים בחלון קצר (4 כל שעתיים) מפיל אותם ל-`failed`/`attempts:0`/`usageRefunded` (לא נוסה בכלל — לא בעיית מדיה). **הפתרון שנשאר אוטומטי:** `tiktok_retry.py` — `--apply` מחייה failed לסלוטים עתידיים, `--spread` מנרמל ל-≤3/יום ב-08/14/20 UTC (מרווח 6h). מחובר ל-`run_producer.bat`. **דחינו `draft:true`** — הוא אמין אבל שובר את האוטומציה (מחייב לחיצה ידנית ב-Creator Inbox). API: עדכון פוסט = `PUT /posts/{id}` (PATCH=405).
+
 ---
 
 ## 4. שיווק שותפים
