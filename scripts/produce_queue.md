@@ -20,14 +20,26 @@ only after Ofer picks an ad, in a separate flow.
    b. Upload the source: `mcp__magnific__creations_upload_image(url = entry.image_url)`
       → note the returned `identifier` (SOURCE_ID).
 
-   c. Point the Space at it:
+   c. Point the Space at it. The Input panel (1b00f6ed) holds MULTIPLE reference
+      Creation nodes, ALL wired into both the concept builder (5ec8e287) and the
+      campaign image generator (93b85932). They must ALL hold the SAME shoe, or the
+      generator blends several shoes and invents a wrong one (this was the
+      consistency bug). Current reference Creation nodes:
+        0114e22a-6027-490e-aeca-b1b428d8ca91
+        02abd82d-b225-4a27-abeb-cf3b7912cfd0
+        0668d990-b1a7-43c1-93db-ef221fe6666f
+        7b24da13-2075-4f2b-9884-8f10fc769810
+      (Re-read them first with spaces_get_nodes — the ids can change if the board is
+      rearranged; the correct set is every `creation` child of panel 1b00f6ed that
+      feeds 5ec8e287/93b85932.)
+      For EACH of those nodes:
       `mcp__magnific__spaces_edit(spaceId="a2796464-3570-4e02-aa77-65f3f4322d9f",
-        selectedElementIds=["9a9c5be6-6014-426c-aae7-e71b24f3307d"],
+        selectedElementIds=["<that node id>"],
         query="Replace the image held by this Creation node with uploaded creation
-        <SOURCE_ID> — a new heel product photo feeding the campaign reference and the
-        concept analyzer.")`
-      Poll `spaces_edit_status` until `allTerminal`. Verify with
-      `spaces_get_nodes([...9a9c5be6...])` that `creationIdentifier == SOURCE_ID`.
+        <SOURCE_ID> — the new heel product photo. Do not change any wiring.")`
+      Poll `spaces_edit_status` until `allTerminal`. Verify with `spaces_get_nodes`
+      that EVERY one of those nodes now has `creationIdentifier == SOURCE_ID`.
+      Only when all match, proceed — otherwise the shoe will be inconsistent.
 
    d. Run the ads chain (NOT the video):
       `mcp__magnific__spaces_run(spaceId="a2796464-3570-4e02-aa77-65f3f4322d9f",
