@@ -104,7 +104,12 @@ def our_hosted_image(item):
     a = item.get("assets", {}) or {}
     for v in [a.get("image_1x1")] + (a.get("images_ig") or []) + [item.get("image_url", "")]:
         if v and "thestilettovault.github.io" in v:
-            return v
+            # Our Pages serves the repo root, so a hosted URL is only real if the
+            # file backing it exists in the repo. Otherwise it 404s on the live
+            # site (a "phantom" heel) — return None so the heel is skipped.
+            rel = v.split("thestilettovault.github.io/", 1)[-1].split("?")[0].lstrip("/")
+            if rel and (ROOT / rel).exists():
+                return v
     return None
 
 
